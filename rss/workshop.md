@@ -98,7 +98,7 @@ Recent Activity in Tag
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter required=true name="tag" %}
+{% api-method-parameter required=true name="tag" type="string" %}
 The submission tag to retrieve
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
