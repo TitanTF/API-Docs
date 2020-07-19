@@ -13,5 +13,5 @@
 
 ## REST
 
-* [Untitled](rest/untitled.md)
+* [Blog Posts](rest/untitled.md)
 
