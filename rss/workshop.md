@@ -1,12 +1,94 @@
 # Workshop
 
 {% api-method method="get" host="https://workshop.titan.tf/atom" path=" " %}
+{% api-method-summary %}
+Recent Activity
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Get submissions based on the most recent activity.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```markup
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[ Workshop ]]></title>
+    <subtitle><![CDATA[ Last posts in the forum ]]></subtitle>
+    <link href="https://workshop.titan.tf/atom/" rel="self" />
+    <link href="https://workshop.titan.tf/" />
+    <id><![CDATA[ https://workshop.titan.tf/ ]]></id>
+    <updated>2020-07-17T12:01:49+00:00</updated>
+    <entry>
+        <title><![CDATA[ Tom and Jerry Theme ]]></title>
+        <link rel="alternate" type="text/html" href="https://workshop.titan.tf/d/25-tom-and-jerry-theme/1" />
+        <id>https://workshop.titan.tf/d/25-tom-and-jerry-theme/1</id>
+        <updated>2020-07-15T05:48:25+00:00</updated>
+        <content type="html"><![CDATA[ <p><strong>Description</strong><br> Reminisce the golden days.</p> <p><strong>Rarity</strong></p> <ul><li data-task-id="5f0e98a9e9efa" data-task-state="checked"><input data-task-id="5f0e98a9e9efa" type="checkbox" checked disabled> Legendary</li> <li data-task-id="5f0e98a9ead1a" data-task-state="unchecked"><input data-task-id="5f0e98a9ead1a" type="checkbox" disabled> Epic</li> <li data-task-id="5f0e98a9eb396" data-task-state="unchecked"><input data-task-id="5f0e98a9eb396" type="checkbox" disabled> Rare</li> <li data-task-id="5f0e98a9ec6b8" data-task-state="unchecked"><input data-task-id="5f0e98a9ec6b8" type="checkbox" disabled> Uncommon</li> <li data-task-id="5f0e98a9ece85" data-task-state="unchecked"><input data-task-id="5f0e98a9ece85" type="checkbox" disabled> Common</li></ul> <p><strong>Obtainability</strong></p> <ul><li data-task-id="5f0e98a9eded1" data-task-state="checked"><input data-task-id="5f0e98a9eded1" type="checkbox" checked disabled> Item Shop</li> <li data-task-id="5f0e98a9ee034" data-task-state="checked"><input data-task-id="5f0e98a9ee034" type="checkbox" checked disabled> Battle Pass</li> <li data-task-id="5f0e98a9eea19" data-task-state="unchecked"><input data-task-id="5f0e98a9eea19" type="checkbox" disabled> Supplies (Drops, Chests etc)</li> <li data-task-id="5f0e98a9eebab" data-task-state="unchecked"><input data-task-id="5f0e98a9eebab" type="checkbox" disabled> Challenges</li> <li data-task-id="5f0e98a9eecdf" data-task-state="unchecked"><input data-task-id="5f0e98a9eecdf" type="checkbox" disabled> Quests</li> <li data-task-id="5f0e98a9ef45d" data-task-state="unchecked"><input data-task-id="5f0e98a9ef45d" type="checkbox" disabled> Team Missions</li> <li data-task-id="5f0e98a9efa5a" data-task-state="unchecked"><input data-task-id="5f0e98a9efa5a" type="checkbox" disabled> Jobs</li></ul> <p><strong>Price (if it is added to the item shop)</strong><br> $299.99</p> <hr> <h3>File</h3> <div class="ButtonGroup" data-fof-upload-download-uuid="d45d2c1b-a8e6-4fee-88f8-388c18b9a2ae"><div class="Button hasIcon Button--icon Button--primary"><i class="fas fa-download"></i></div><div class="Button">tomnjerry.mpga</div><div class="Button">412kB</div></div> <h3>Source</h3> <p><span data-s9e-mediaembed="youtube" style="display:inline-block;width:100%;max-width:640px"><span style="display:block;overflow:hidden;position:relative;padding-bottom:56.25%"><iframe allowfullscreen="" loading="lazy" scrolling="no" style="background:url(https://i.ytimg.com/vi/3cu0KOzunpI/hqdefault.jpg) 50% 50% / cover;border:0;height:100%;left:0;position:absolute;width:100%" src="https://www.youtube.com/embed/3cu0KOzunpI"></iframe></span></span></p> ]]></content>
+        <author>
+            <name>myst</name>
+        </author>
+    </entry>
+</feed>
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 {% api-method method="get" host="https://workshop.titan.tf/atom/discussions" path=" " %}
+{% api-method-summary %}
+New Submissions
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Get the newest submissions.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```markup
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[ New discussions in Workshop ]]></title>
+    <subtitle><![CDATA[ The newest discussions in the forum ]]></subtitle>
+    <link href="https://workshop.titan.tf/atom/" rel="self" />
+    <link href="https://workshop.titan.tf/" />
+    <id><![CDATA[ https://workshop.titan.tf/ ]]></id>
+    <updated>2020-07-17T12:01:49+00:00</updated>
+    <entry>
+        <title><![CDATA[ Tom and Jerry Theme ]]></title>
+        <link rel="alternate" type="text/html" href="https://workshop.titan.tf/d/25-tom-and-jerry-theme/1" />
+        <id>https://workshop.titan.tf/d/25-tom-and-jerry-theme/1</id>
+        <updated>2020-07-15T05:48:25+00:00</updated>
+        <content type="html"><![CDATA[ <p><strong>Description</strong><br> Reminisce the golden days.</p> <p><strong>Rarity</strong></p> <ul><li data-task-id="5f0e98a9e9efa" data-task-state="checked"><input data-task-id="5f0e98a9e9efa" type="checkbox" checked disabled> Legendary</li> <li data-task-id="5f0e98a9ead1a" data-task-state="unchecked"><input data-task-id="5f0e98a9ead1a" type="checkbox" disabled> Epic</li> <li data-task-id="5f0e98a9eb396" data-task-state="unchecked"><input data-task-id="5f0e98a9eb396" type="checkbox" disabled> Rare</li> <li data-task-id="5f0e98a9ec6b8" data-task-state="unchecked"><input data-task-id="5f0e98a9ec6b8" type="checkbox" disabled> Uncommon</li> <li data-task-id="5f0e98a9ece85" data-task-state="unchecked"><input data-task-id="5f0e98a9ece85" type="checkbox" disabled> Common</li></ul> <p><strong>Obtainability</strong></p> <ul><li data-task-id="5f0e98a9eded1" data-task-state="checked"><input data-task-id="5f0e98a9eded1" type="checkbox" checked disabled> Item Shop</li> <li data-task-id="5f0e98a9ee034" data-task-state="checked"><input data-task-id="5f0e98a9ee034" type="checkbox" checked disabled> Battle Pass</li> <li data-task-id="5f0e98a9eea19" data-task-state="unchecked"><input data-task-id="5f0e98a9eea19" type="checkbox" disabled> Supplies (Drops, Chests etc)</li> <li data-task-id="5f0e98a9eebab" data-task-state="unchecked"><input data-task-id="5f0e98a9eebab" type="checkbox" disabled> Challenges</li> <li data-task-id="5f0e98a9eecdf" data-task-state="unchecked"><input data-task-id="5f0e98a9eecdf" type="checkbox" disabled> Quests</li> <li data-task-id="5f0e98a9ef45d" data-task-state="unchecked"><input data-task-id="5f0e98a9ef45d" type="checkbox" disabled> Team Missions</li> <li data-task-id="5f0e98a9efa5a" data-task-state="unchecked"><input data-task-id="5f0e98a9efa5a" type="checkbox" disabled> Jobs</li></ul> <p><strong>Price (if it is added to the item shop)</strong><br> $299.99</p> <hr> <h3>File</h3> <div class="ButtonGroup" data-fof-upload-download-uuid="d45d2c1b-a8e6-4fee-88f8-388c18b9a2ae"><div class="Button hasIcon Button--icon Button--primary"><i class="fas fa-download"></i></div><div class="Button">tomnjerry.mpga</div><div class="Button">412kB</div></div> <h3>Source</h3> <p><span data-s9e-mediaembed="youtube" style="display:inline-block;width:100%;max-width:640px"><span style="display:block;overflow:hidden;position:relative;padding-bottom:56.25%"><iframe allowfullscreen="" loading="lazy" scrolling="no" style="background:url(https://i.ytimg.com/vi/3cu0KOzunpI/hqdefault.jpg) 50% 50% / cover;border:0;height:100%;left:0;position:absolute;width:100%" src="https://www.youtube.com/embed/3cu0KOzunpI"></iframe></span></span></p> ]]></content>
+        <author>
+            <name>myst</name>
+        </author>
+    </entry>
+</feed>
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 {% api-method method="get" host="https://workshop.titan.tf/atom/t/" path="tag" %}
 {% api-method-summary %}
-
+Recent Activity in Tag
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -16,7 +98,7 @@
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="tag" type="string" required=true %}
+{% api-method-parameter required=true name="tag" %}
 The submission tag to retrieve
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
@@ -25,7 +107,7 @@ The submission tag to retrieve
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Returns an XML feed on success.
+
 {% endapi-method-response-example-description %}
 
 ```markup
