@@ -11,7 +11,3 @@
 * [Workshop](rss/workshop.md)
 * [Fix Titan.TF](rss/fix.md)
 
-## REST
-
-* [Untitled](rest/untitled.md)
-
